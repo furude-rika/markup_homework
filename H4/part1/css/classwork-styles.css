@@ -1,0 +1,173 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/*img {
+	max-width: 100%
+}*/
+
+.logo-picture {
+	height: 50px;
+	width: 150px;
+}
+
+main {
+	display: flex;
+	flex-grow: 1;
+	min-width: 100%;
+	text-align: center;
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ff0;
+	padding: 10px;
+}
+
+.nav-list {
+	list-style-type: none;
+	list-style-position: inside;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav-list li {
+	/*padding: 10px;*/
+	margin: 0;
+}
+
+.content {
+	flex-grow: 1;
+	padding: 10px;
+}
+
+aside.left, aside.right {
+	width: 200px;
+	padding: 10px;
+	background-color: #EE82EE;
+	order: -1;
+	flex-shrink: 0;
+}
+
+aside.right {
+	background-color: #9370DB;
+	order: 1;
+}
+
+footer {
+	background-color: #9ACD32;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	width: 30%;
+	margin-bottom: 30px;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	position: relative;
+}
+
+.image-holder img {
+	width: 50%;
+	margin: 0 auto;
+	vertical-align: top;
+}
+
+.card a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 3em;
+	border: 1px solid #000;
+	background-color: #f0f;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+
+@media (max-width: 1023px) {
+	aside.left {
+		order: 1;
+		width: 50%;
+	}
+	aside.right {
+		order: 1;
+		width: 50%;
+	}	
+	.content {
+		width: 100%;
+	}
+	main {
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 45%;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-header {
+		display: block;
+		text-align: center;
+	}
+	.nav-list {
+		display: block;
+	}
+	.nav-list a {
+		display: block;
+		padding: 5px;
+		border-bottom: 1px solid #000;
+	}
+
+	.nav-list li:last-child a {
+		border-bottom: none;
+	}
+	aside.left {
+		/*order: 1;*/
+		width: 100%;
+	}
+	aside.right {
+		/*order: 1;*/
+		width: 100%;
+	}	
+	.content {
+		width: 100%;
+	}
+	main {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 500px) {
+	.card {
+		width: 100%;
+	}
+}

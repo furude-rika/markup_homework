@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+	.pos-f-t {
+		display: none;
+	}
+}
+
+@media (max-width: 575px) {
+	.pos-f-t {
+		display: block;
+	}
+	.big-nav {
+		display: none;
+	}
+	.small-nav {
+		flex-direction: column;
+/*		position: absolute;
+		left: 0;*/
+	}
+}
+
+/*button.navbar-toggler:focus .big-nav{
+	display: flex;
+}*/

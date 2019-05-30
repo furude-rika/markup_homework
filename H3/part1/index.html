@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hometask</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="main">
+			<img class="left-pic" src="images/a-level-ico.png" alt="image">
+			<p>
+				Алиса хочет отправить важное сообщение Бобу
+			</p>
+			<p>
+				Сообщение a = ( a<sub class="blue-sub">1</sub>, ..., a<sub class="blue-sub">n</sub> ) является последовательностью положительных чисел ( символов )
+			</p>
+			<p>
+				Для сжатия сообщения Алиса хочет использовать <span class="green-text" title="двоичный префиксно-свободный код"><b>двоичный код Хаффмана</b></span>
+			</p>
+			<p>
+				Напомним, что двоичный код Хаффмана, или <i><b>двоичный префиксно-свободный код</b></i> — это <span class="new-word-after">функция </span>, которая сопоставляет каждому символу сообщения двоичные строки (то есть строки, состоящие только из символов «0» и «1») таким образом, что ни для какой пары различных символов a<sub class="blue-sub">i</sub> и a<sub class="blue-sub">j</sub> строка <span class="new-word">( a<sub class="blue-sub">i</sub> )</span> не является префиксом <span class="new-word">( a<sub class="blue-sub">j</sub> )</span> (и наоборот). Результатом кодирования сообщения a<sub class="blue-sub">1</sub>, a<sub class="blue-sub">2</sub>, ..., a<sub class="blue-sub">n</sub> является конкатенация кодов отдельных символов, то есть строка <span class="new-word">( a<sub class="blue-sub">1</sub> )</span> <span class="new-word">( a<sub class="blue-sub">2</sub> )</span>... <span class="new-word">( a<sub class="blue-sub">n</sub> )</span>
+			</p>
+			<p>
+				Коды Хаффмана удобны тем, что закодированное сообщение можно легко и однозначно декодировать, если знать код
+			</p>
+			<img class="right-pic" src="images/a-level-ico.png" alt="image">
+			<p>
+			Код обычно выбирается таким образом, чтобы минимизировать суммарную длину закодированного сообщения, то есть длину строки <span class="new-word">( a<sub class="blue-sub">1</sub> )</span> <span class="new-word">( a<sub class="blue-sub">2</sub> )</span>... <span class="new-word">( a<sub class="blue-sub">n</sub> )</span>
+			</p>
+			<p>
+			Алиса не хочет посылать сообщение целиком, поскольку это слишком рискованно
+			</p>
+			<p>
+				Вместо этого она выбрала несколько частей сообщения и хочет отправить их по отдельности
+			</p>
+			<p>
+				Для каждой выбранной подстроки a<sub class="blue-sub">ki</sub>... a<sub class="blue-sub">mi</sub> она хочет найти минимальную длину этой подстроки, закодированной по Хаффману
+			</p>
+			<p>
+				Помогите ей с этой задачей
+			</p>
+		</div>
+	</body>
+	</html>

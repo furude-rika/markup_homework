@@ -1,0 +1,46 @@
+body{
+	font-family: Arial;
+}
+
+.main, #border{
+	width: 700px;
+	outline: 1px solid lightgray;
+	margin: 0px auto;
+	padding: 10px;
+}
+
+#border{
+	width: 730px;
+	padding: 10px 10px 20px;
+}
+
+.main hr{
+	border: none;
+    background-color: lightgray;
+    height: 1px;
+}
+
+a{text-decoration: none;}
+
+a:hover{
+	text-decoration: underline;
+	color: blue;
+}
+
+.redText{
+	padding: 20px;
+	border: 1px solid #f6f8fa;
+	background-color: #f6f8fa;
+	border-radius: 5px;
+}
+
+#secP{font-style: italic;}
+
+p{line-height: 30px;}
+
+h1, h2, h3, h4{margin-bottom: 0px;}
+
+#thirdP{
+	margin-top: 10px;
+	margin-bottom: 0px;
+}

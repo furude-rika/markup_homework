@@ -1,0 +1,57 @@
+body{font-family: 'Open Sans';}
+
+.main{
+	width: 1000px;
+	margin: 50px auto 300px;
+}
+
+#firstPic{width: 100%;}
+
+.main p{
+	color: grey;
+	line-height: 30px;
+}
+
+#sec1{
+	width: 700px;
+	padding-top: 10px;
+}
+
+.main a{
+	color: orange;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.main aside{
+	width: 310px;
+	background-color: #F5F5F5;
+	margin: 50px 0px;
+	padding-bottom: 30px;
+}
+
+.main aside img{
+	padding: 30px 30px 0px 30px;
+}
+
+.side h5, .data{
+	padding: 0px 30px 0px 30px;
+	font-size: 13px;
+	margin: 0px;
+}
+
+.side h5{
+	font-size: 12px;
+	letter-spacing: 0px;
+	word-spacing: -1px;
+}
+
+#mainData{
+	margin: 0px;
+	font-size: 13px;
+}
+
+.main h2, .main h5{
+	color: #696969;
+	margin-top: 0px;
+}
